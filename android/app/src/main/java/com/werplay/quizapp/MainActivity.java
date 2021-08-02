@@ -1,4 +1,4 @@
-package com.reactnativeboilerplacehermes;
+package com.werplay.quizapp;
 
 import com.facebook.react.ReactActivity;
 

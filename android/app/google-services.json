@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "785974565924",
+    "project_id": "quiz-app-werplay",
+    "storage_bucket": "quiz-app-werplay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785974565924:android:61389fe0e16d961b45ccb1",
+        "android_client_info": {
+          "package_name": "com.werplay.quizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785974565924-13idkhuea7mntofigp12ov9c7kf81bv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrHMoTo-9XoEeO5rJ3ZwZgDguxz7latyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785974565924-13idkhuea7mntofigp12ov9c7kf81bv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

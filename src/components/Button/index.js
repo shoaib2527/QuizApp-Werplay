@@ -8,7 +8,7 @@ const Button = ({
   onPress,
   disabled = false,
   isLoading = false,
-  loaderColor = AppColors.white,
+  loaderColor = AppColors.white100,
   activeOpacity = 0.7,
   containerStyle = {},
   textStyle = {},
@@ -20,7 +20,7 @@ const Button = ({
       activeOpacity={activeOpacity}
       style={[styles.container, containerStyle]}>
       {isLoading ? (
-        <ActivityIndicator color={loaderColor} size="large" />
+        <ActivityIndicator color={loaderColor} size={25} />
       ) : (
         <Text style={[styles.text, textStyle]}>{title}</Text>
       )}

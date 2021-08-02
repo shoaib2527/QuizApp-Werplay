@@ -3,6 +3,11 @@ import { height, width } from 'react-native-dimension';
 import AppColors from '../utills/AppColors';
 
 const CommonStyles = StyleSheet.create({
+    errorText: {
+        color: AppColors.red,
+        fontSize: width(3),
+        width: '87%'
+    },
     marginLeft_1: {
         marginLeft: width(1)
     },

@@ -1,8 +1,24 @@
 const AppColors = {
-  green: '#669e01',
-  white: '#ffffff',
+  primary: '#0336ff',
+  // primaryDark: '#6969b3',
+  secondary: '#ffde03',
+  // secondaryDark: '#4b244a',
+  accent: '#ff0266',
+  grey100: '#65655E',
+  grey75: '#8C8C86',
+  grey50: '#B2B2AF',
+  grey25: '#D8D8D6',
+  white100: '#ffffff',
+  white75: '#FBFCFC',
+  white50: '#F4F6F7',
+  white25: '#ECF0F1',
+  black100: '#000000',
+  black75: '#17202A',
+  black50: '#212F3D',
+  black25: '#2C3E50',
+  red: '#EF282B',
+  green: '#58D68D',
+  yellow: '#FDCC0D',
   transparent: 'transparent',
-  gray: 'gray',
-  black: 'black'
 };
 export default AppColors;

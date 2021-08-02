@@ -5,8 +5,8 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 15,
-    backgroundColor: AppColors.green,
+    borderRadius: 5,
+    backgroundColor: AppColors.accent,
     width: '80%',
     alignSelf: 'center',
     paddingVertical: 10,
@@ -18,11 +18,8 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   text: {
-    color: "white",
+    color: AppColors.white100,
     fontSize: 20,
-    textShadowRadius: 0.1,
-    textShadowColor: AppColors.darkGreen,
-    textShadowOffset: { width: 1.2, height: 1.2 }
   }
 });
 export default styles;

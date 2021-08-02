@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     height: height(12),
-    width: '100%',
+    width:'100%',
     resizeMode: 'contain',
     marginVertical: height(5)
   },
@@ -28,12 +28,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: height(2)
   },
-  dontHaveAccount: {
+  haveAccount:{
     fontStyle: 'italic',
     fontSize: width(4),
     marginTop: height(3)
   },
-  signUp: {
+  login:{
     color: AppColors.accent,
   }
 });

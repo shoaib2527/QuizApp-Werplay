@@ -1,19 +1,21 @@
-import React, {Component} from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import React, { Component } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../screens/Login';
+import SignUp from '../screens/Signup';
 import Dashboard from '../screens/Dashboard';
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 import Loader from '../components/Loader'
 const Stack = createStackNavigator();
 export default function Routes() {
-    const isLogin = useSelector(state => state.Auth.isLogin)
+  const isLogin = useSelector(state => state.Auth.isLogin)
   return (
     <NavigationContainer>
-      <Loader/>
+      <Loader />
       {!isLogin ? (
         <Stack.Navigator initialRouteName="Login" headerMode="none">
           <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="SignUp" component={SignUp} />
         </Stack.Navigator>
       ) : (
         <Stack.Navigator initialRouteName="Dashboard" headerMode="none">
