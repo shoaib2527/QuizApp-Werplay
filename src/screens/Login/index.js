@@ -12,6 +12,7 @@ import Input from '../../components/Input'
 import CommonStyles from '../../utills/CommonStyles';
 import { ValidateEmail } from '../../utills/Methods'
 import auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
 
 export default function Dashboard(props) {
   const user = useSelector((state) => state.Auth.user);
@@ -27,11 +28,27 @@ export default function Dashboard(props) {
         setLoginLoader(true)
         auth()
           .signInWithEmailAndPassword(email.trim(), password.trim())
-          .then(r => {
+          .then(async r => {
             setLoginLoader(false)
-            setEmail('');
-            setPassword('');
-            console.log(r)
+            firestore().collection('Users').doc(r?.user?.uid).get()
+              .then(r => {
+                setEmail('');
+                setPassword('');
+                showMessage({
+                  message: 'Success',
+                  description: 'Succfully logged In',
+                  type: 'success',
+                });
+                //   dispatch(setLoaderVisible(false));
+                dispatch(login(r.data()))
+              }).catch(err => {
+                showMessage({
+                  message: 'Error',
+                  description: err?.message ?? 'Something went wrong.',
+                  type: 'danger',
+                });
+              })
+
           })
           .catch(error => {
             console.log(error)
@@ -68,15 +85,6 @@ export default function Dashboard(props) {
               });
             }
           });
-        // setTimeout(() => {
-        //   showMessage({
-        //     message: 'Success',
-        //     description: 'Succfully logged In',
-        //     type: 'success',
-        //   });
-        //   dispatch(setLoaderVisible(false));
-        //   dispatch(login({ userName: 'John Doe' }));
-        // }, 1500);
       }
       else
         setError("Password can't empty.")
