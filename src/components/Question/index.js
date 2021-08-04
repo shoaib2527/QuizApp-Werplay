@@ -1,34 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { Text, TouchableOpacity, View, Image, FlatList } from 'react-native';
+import { FlatList, Image, Pressable, Text, View } from 'react-native';
+import CheckedIcon from '../../assets/images/selected.png';
+import UnCheckedIcon from '../../assets/images/unselected.png';
+import Button from '../Button';
 import styles from './styles';
-import Logout from '../../assets/images/logout.png'
-const Component = ({ item, count = 0, containerStyle }) => {
-  const [options, setOptions] = useState(item?.incorrect_answers)
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-  useEffect(() => {
-    let newOptions = item?.incorrect_answers;
-    newOptions.splice(getRandomInt(3), 0, item?.correct_answer)
-    setOptions(newOptions)
-  }, [item])
-
+const Question = ({ item, containerStyle, onSubmit = () => { } }) => {
+  const [selectedIndex, setSelectedIndex] = useState(-1)
+  useEffect(() => setSelectedIndex(-1), [item])
   const renderOption = ({ item, index }) => {
-    return <View style={styles.optionContainer}>
-      <Text>{item}fff</Text>
-    </View>
+    const isSelected = index == selectedIndex
+    return <Pressable style={styles.optionContainer} onPress={() => setSelectedIndex(index)}>
+      <Image style={[styles.icon]} key={index.toString()} resizeMode="contain" source={isSelected ? CheckedIcon : UnCheckedIcon} />
+      <Text style={styles.optionText}>{item.replaceAll('&#039;',`'`)}</Text>
+    </Pressable>
   }
-  console.log(options)
   return (<View style={[styles.container, containerStyle ? containerStyle : null]}>
     <Text style={styles.category}>{item?.category}</Text>
-
+    <Text style={styles.questionText}>{item?.question}</Text>
     <FlatList
-      style={{ backgroundColor: 'blue' }}
-      data={options}
+      style={styles.flatList}
+      data={item?.options}
       renderItem={renderOption}
       keyExtractor={(item, index) => index.toString()} />
-    <Text style={styles.questionText}>{count > 0 ? "Q no." + count + ": " : ''} {item?.question}</Text>
+    <Button title="Submit" disabled={selectedIndex < 0} onPress={() => { onSubmit(item?.options[selectedIndex]) }} />
   </View>)
 };
 
-export default Component;
+export default Question;

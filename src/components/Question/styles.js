@@ -1,9 +1,8 @@
 import { StyleSheet } from 'react-native';
-import { height, width } from 'react-native-dimension'
+import { height, totalSize, width } from 'react-native-dimension'
 import AppColors from '../../utills/AppColors';
 const styles = StyleSheet.create({
   container: {
-    height: height(8),
     width: width(100),
     alignItems: 'center',
     paddingHorizontal: width(4),
@@ -12,17 +11,39 @@ const styles = StyleSheet.create({
     color: AppColors.primary,
     fontWeight: 'bold',
     fontSize: width(5.5),
-    textAlign: 'center'
+    textAlign: 'center',
+    marginBottom:height(3)
   },
-  optionContainer:{
-    backgroundColor:'red',
-    height: height(10)
+  questionText:{
+    color: AppColors.black75,
+    fontWeight: 'bold',
+    fontSize: totalSize(2),
+    lineHeight: totalSize(3),
+    letterSpacing: width(0.2),
+    textAlign:'left',
+    width:width(90)
+  },
+  optionText:{
+    color: AppColors.black75,
+    fontWeight: 'bold',
+    fontSize: totalSize(2),
+    letterSpacing: width(0.4),
+  },
+  flatList: {
+    marginTop:height(5),
+    height: height(50)
+  },
+  optionContainer: {
+    flexDirection: 'row',
+    width: width(80),
+    alignItems:'center',
+    marginVertical: height(2)
   },
   icon: {
     height: height(4),
     width: height(4),
     resizeMode: 'contain',
-    tintColor: AppColors.white50
+    marginRight: width(5)
   }
 });
 export default styles;

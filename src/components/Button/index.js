@@ -18,7 +18,7 @@ const Button = ({
       onPress={onPress}
       disabled={disabled || isLoading}
       activeOpacity={activeOpacity}
-      style={[styles.container, containerStyle]}>
+      style={[styles.container, containerStyle, {backgroundColor: disabled ? AppColors.grey75: AppColors.accent}]}>
       {isLoading ? (
         <ActivityIndicator color={loaderColor} size={25} />
       ) : (

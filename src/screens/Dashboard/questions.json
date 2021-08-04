@@ -32,7 +32,7 @@
       "incorrect_answers": [
         "Transformers",
         "Care Bears",
-        "Rubik&rsquo;s Cube"
+        "Rubik's Cube"
       ]
     },
     {
@@ -135,7 +135,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is &quot;dabbing&quot;?",
+      "question": "What is \"dabbing\"?",
       "correct_answer": "A dance",
       "incorrect_answers": [
         "A medical procedure",
@@ -183,7 +183,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is on display in the Madame Tussaud&#039;s museum in London?",
+      "question": "What is on display in the Madame Tussaud's museum in London?",
       "correct_answer": "Wax sculptures",
       "incorrect_answers": [
         "Designer clothing",
@@ -198,7 +198,7 @@
       "question": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
       "correct_answer": "Spruce Goose",
       "incorrect_answers": [
-        "Noah&#039;s Ark",
+        "Noah's Ark",
         "Fat Man",
         "Trojan Horse"
       ]
@@ -207,7 +207,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the Spanish word for &quot;donkey&quot;?",
+      "question": "What is the Spanish word for \"donkey\"?",
       "correct_answer": "Burro",
       "incorrect_answers": [
         "Caballo",
@@ -219,12 +219,12 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the French word for &quot;hat&quot;?",
+      "question": "What is the French word for \"hat\"?",
       "correct_answer": "Chapeau",
       "incorrect_answers": [
         "Bonnet",
-        " &Eacute;charpe",
-        " Casque"
+        "charpe",
+        "Casque"
       ]
     },
     {
@@ -284,7 +284,7 @@
       "incorrect_answers": [
         "Pupcia",
         "Polszka",
-        "P&oacute;land"
+        "Pland"
       ]
     },
     {
@@ -303,8 +303,8 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which restaurant&#039;s mascot is a clown?",
-      "correct_answer": "McDonald&#039;s",
+      "question": "Which restaurant's mascot is a clown?",
+      "correct_answer": "McDonald's",
       "incorrect_answers": [
         "Whataburger",
         "Burger King",
@@ -354,7 +354,7 @@
       "question": "What is Tasmania?",
       "correct_answer": "An Australian State",
       "incorrect_answers": [
-        "A flavor of Ben and Jerry&#039;s ice-cream",
+        "A flavor of Ben and Jerry's ice-cream",
         "A Psychological Disorder",
         "The Name of a Warner Brothers Cartoon Character"
       ]
@@ -378,7 +378,7 @@
       "question": "Which candy is NOT made by Mars?",
       "correct_answer": "Almond Joy",
       "incorrect_answers": [
-        "M&amp;M&#039;s",
+        "MM's",
         "Twix",
         "Snickers"
       ]
@@ -388,11 +388,11 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "In which fast food chain can you order a Jamocha Shake?",
-      "correct_answer": "Arby&#039;s",
+      "correct_answer": "Arby's",
       "incorrect_answers": [
-        "McDonald&#039;s",
+        "McDonald's",
         "Burger King",
-        "Wendy&#039;s"
+        "Wendy's"
       ]
     },
     {
@@ -450,8 +450,8 @@
       "question": "Terry Gilliam was an animator that worked with which British comedy group?",
       "correct_answer": "Monty Python",
       "incorrect_answers": [
-        "The Goodies&lrm;",
-        "The League of Gentlemen&lrm;",
+        "The Goodies",
+        "The League of Gentlemen",
         "The Penny Dreadfuls"
       ]
     },
@@ -483,7 +483,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the closest planet to our solar system&#039;s sun?",
+      "question": "What is the closest planet to our solar system's sun?",
       "correct_answer": "Mercury",
       "incorrect_answers": [
         "Mars",
@@ -567,7 +567,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the French word for &quot;fish&quot;?",
+      "question": "What is the French word for \"fish\"?",
       "correct_answer": "poisson",
       "incorrect_answers": [
         "fiche",
@@ -616,11 +616,11 @@
         "type": "multiple",
         "difficulty": "easy",
         "question": "In any programming language, what is the most common way to iterate through an array?",
-        "correct_answer": "&#039;For&#039; loops",
+        "correct_answer": "'For' loops",
         "incorrect_answers": [
-          "&#039;If&#039; Statements",
-          "&#039;Do-while&#039; loops",
-          "&#039;While&#039; loops"
+          "'If' Statements",
+          "'Do-while' loops",
+          "'While' loops"
         ]
       },
       {
@@ -639,7 +639,7 @@
         "category": "Science: Computers",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "What does the &quot;MP&quot; stand for in MP3?",
+        "question": "What does the \"MP\" stand for in MP3?",
         "correct_answer": "Moving Picture",
         "incorrect_answers": [
           "Music Player",
@@ -675,7 +675,7 @@
         "category": "Science: Computers",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "The programming language &#039;Swift&#039; was created to replace what other programming language?",
+        "question": "The programming language 'Swift' was created to replace what other programming language?",
         "correct_answer": "Objective-C",
         "incorrect_answers": [
           "C#",
@@ -711,7 +711,7 @@
         "category": "Science: Computers",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn&#039;t get modified?",
+        "question": "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
         "correct_answer": "Final",
         "incorrect_answers": [
           "Static",
@@ -723,7 +723,7 @@
         "category": "Science: Computers",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "If you were to code software in this language you&#039;d only be able to type 0&#039;s and 1&#039;s.",
+        "question": "If you were to code software in this language you'd only be able to type 0's and 1's.",
         "correct_answer": "Binary",
         "incorrect_answers": [
           "JavaScript",
@@ -736,10 +736,10 @@
         "type": "multiple",
         "difficulty": "easy",
         "question": "What does the Prt Sc button do?",
-        "correct_answer": "Captures what&#039;s on the screen and copies it to your clipboard",
+        "correct_answer": "Captures what's on the screen and copies it to your clipboard",
         "incorrect_answers": [
           "Nothing",
-          "Saves a .png file of what&#039;s on the screen in your screenshots folder in photos",
+          "Saves a .png file of what's on the screen in your screenshots folder in photos",
           "Closes all windows"
         ]
       },
@@ -819,7 +819,7 @@
         "category": "Science: Computers",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "In &quot;Hexadecimal&quot;, what color would be displayed from the color code? &quot;#00FF00&quot;?",
+        "question": "In \"Hexadecimal\", what color would be displayed from the color code? \"#00FF00\"?",
         "correct_answer": "Green",
         "incorrect_answers": [
           "Red",
@@ -967,7 +967,7 @@
         "correct_answer": "Cheetah",
         "incorrect_answers": [
           "Lion",
-          "Thomson&rsquo;s Gazelle",
+          "Thomson's Gazelle",
           "Pronghorn Antelope"
         ]
       },
@@ -1035,7 +1035,7 @@
         "category": "Animals",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "What is Grumpy Cat&#039;s real name?",
+        "question": "What is Grumpy Cat's real name?",
         "correct_answer": "Tardar Sauce",
         "incorrect_answers": [
           "Sauce",
@@ -1107,7 +1107,7 @@
         "category": "Animals",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "What is the name of a rabbit&#039;s abode?",
+        "question": "What is the name of a rabbit's abode?",
         "correct_answer": "Burrow",
         "incorrect_answers": [
           "Nest",
@@ -1239,7 +1239,7 @@
         "category": "Celebrities",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "What was James Coburn&#039;s last film role before his death?",
+        "question": "What was James Coburn's last film role before his death?",
         "correct_answer": "American Gun",
         "incorrect_answers": [
           "Monsters Inc",
