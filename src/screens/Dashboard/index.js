@@ -10,14 +10,12 @@ import { showMessage } from 'react-native-flash-message';
 import Header from '../../components/Header'
 import auth from '@react-native-firebase/auth'
 import firestore from '@react-native-firebase/firestore'
-import questions from './questions.json'
+import Question from '../../components/Question'
 export default function Dashboard(props) {
   const user = useSelector((state) => state.Auth.user);
   const dispatch = useDispatch();
   useEffect(() => {
-    questions.map(question => {
-      firestore().collection('Questions').add(question)
-    })
+    // firestore().collection('Questions').add(question)
   }, [])
   const logoutMethod = async () => {
     showMessage({
@@ -32,8 +30,18 @@ export default function Dashboard(props) {
     <ScreenWrapper statusBarColor={AppColors.primary} barStyle="light-content"
       headerUnScrollable={() => <Header title="Quiz at werplay" logout onPressRight={logoutMethod} />}>
       <View style={styles.mainViewContainer}>
-        <Text style={styles.text}>Dashboard</Text>
-        <Text style={styles.text}>{user.userName}</Text>
+        <Question count = {'1'} item={{
+          "category": "General Knowledge",
+          "type": "multiple",
+          "difficulty": "easy",
+          "question": "Which company did Valve cooperate with in the creation of the Vive?",
+          "correct_answer": "HTC",
+          "incorrect_answers": [
+            "Oculus",
+            "Google",
+            "Razer"
+          ]
+        }} />
         <Button title="Logout" onPress={logoutMethod} />
       </View>
     </ScreenWrapper>
