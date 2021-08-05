@@ -4,10 +4,10 @@ import AppColors from '../../utills/AppColors';
 
 const styles = StyleSheet.create({
   mainViewContainer: {
-    height: height(96),
+    height: height(100),
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: AppColors.primary
+    backgroundColor: AppColors.black25
   },
   formContainer: {
     backgroundColor: AppColors.white100,

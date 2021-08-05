@@ -13,7 +13,7 @@ import CommonStyles from '../../utills/CommonStyles';
 import { ValidateEmail } from '../../utills/Methods'
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
-
+import * as Animatable from 'react-native-animatable';
 export default function Dashboard(props) {
   const user = useSelector((state) => state.Auth.user);
   const [email, setEmail] = useState(__DEV__ ? 'shoaib.ahmed47564@gmail.com' : '')
@@ -91,12 +91,12 @@ export default function Dashboard(props) {
     else
       setError(emailValidation.message)
   };
-  const signup = () => props.navigation.navigate('SignUp')
+  const signup = () => props.navigation.replace('SignUp')
   return (
-    <ScreenWrapper statusBarColor={AppColors.primary} barStyle='light-content' scrollEnabled={true}>
+    <ScreenWrapper statusBarColor={AppColors.black25} barStyle='light-content' scrollEnabled={true}>
       <View style={styles.mainViewContainer}>
-        <Image source={{ uri: 'https://www.werplay.com/rsrc/images/temp.png' }} style={styles.logo} />
-        <View style={styles.formContainer}>
+        <Animatable.Image animation={"fadeInUp"} source={{ uri: 'https://www.werplay.com/rsrc/images/temp.png' }} style={styles.logo} />
+        <Animatable.View style={styles.formContainer} animation={"zoomInUp"}>
           <Text style={styles.heading}>Login</Text>
           <Input label='Email' value={email} onChangeText={setEmail} />
           <Input label='Password' value={password} onChangeText={setPassword} />
@@ -108,7 +108,7 @@ export default function Dashboard(props) {
               {' Signup'}
             </Text>
           </Text>
-        </View>
+        </Animatable.View>
       </View>
     </ScreenWrapper>
   );
