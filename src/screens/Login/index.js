@@ -16,8 +16,8 @@ import firestore from '@react-native-firebase/firestore';
 
 export default function Dashboard(props) {
   const user = useSelector((state) => state.Auth.user);
-  const [email, setEmail] = useState('shoaib.ahmed47564@gmail.com')
-  const [password, setPassword] = useState('123qwe')
+  const [email, setEmail] = useState(__DEV__ ? 'shoaib.ahmed47564@gmail.com' : '')
+  const [password, setPassword] = useState(__DEV__ ? '123qwe' : '')
   const [error, setError] = useState('')
   const [loginLoader, setLoginLoader] = useState(false)
   const dispatch = useDispatch();
@@ -39,7 +39,6 @@ export default function Dashboard(props) {
                   description: 'Succfully logged In',
                   type: 'success',
                 });
-                //   dispatch(setLoaderVisible(false));
                 dispatch(login(r.data()))
               }).catch(err => {
                 showMessage({
